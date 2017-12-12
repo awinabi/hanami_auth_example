@@ -4,12 +4,14 @@ gem 'rake'
 gem 'hanami',       '~> 1.1'
 gem 'hanami-model', '~> 1.1'
 
-gem 'sqlite3'
+gem 'pg'
+gem 'puma'
 
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem 'shotgun'
+  gem 'sqlite3'
 end
 
 group :test, :development do
